@@ -3,7 +3,7 @@ name: "Post to Bluesky"
 on: workflow_dispatch
 on:
   schedule:
-    - cron: "23,26,29 * * * *""
+    - cron: "34,36,38 * * * *""
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - name: Send post
-        run: npm start
+        run: npm run dev
         env:
           BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
           BSKY_PASSWORD: ${{ secrets.BSKY_PASSWORD }}
