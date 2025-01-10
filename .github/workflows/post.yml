@@ -1,6 +1,6 @@
 name: "Post to Bluesky"
 
-on: workflow_dispatch
+##on: workflow_dispatch
 on:
   schedule:
     - cron: "34,36,38 * * * *""
