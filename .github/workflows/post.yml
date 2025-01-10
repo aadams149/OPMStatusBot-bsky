@@ -1,9 +1,9 @@
 name: "Post to Bluesky"
 
 on: workflow_dispatch
-# on:
-#   schedule:
-#     - cron: "30 5,17 * * *"
+ on:
+   schedule:
+     - cron: "0 7 * * *"
 
 jobs:
   build:

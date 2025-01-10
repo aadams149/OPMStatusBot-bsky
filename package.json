@@ -27,6 +27,8 @@
   "devDependencies": {
     "@eslint/js": "^9.15.0",
     "@types/node": "^22.9.3",
+    "@types/xml2js": "^0.4.14",
+    "@types/xmldom": "^0.1.34",
     "eslint": "^9.15.0",
     "node-env-run": "^4.0.2",
     "typescript": "^5.7.2",
@@ -34,6 +36,9 @@
   },
   "dependencies": {
     "@atproto/api": "^0.13.18",
+    "fetch": "^1.1.0",
+    "xml2js": "^0.6.2",
+    "xmldom": "^0.6.0",
     "zod": "^3.23.8"
   }
 }
