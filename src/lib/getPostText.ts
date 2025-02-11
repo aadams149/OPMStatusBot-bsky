@@ -40,6 +40,10 @@ export default async function getPostText(): Promise<string> {
       const result = `${appliesTo}\n\n${longStatusMessage}\n\n${statusURL}`;
 
       // Return the concatenated string
+      if (result.length > 300) {
+        const shortSummary = currentStatus.StatusSummary.[0]?.trim() || '';
+        const result = `${appliesTo}\n\n${shortSummary}\n\n${statusURL}`;
+      }
       return result;
     } else {
       console.error("CurrentStatus not found in XML.");
