@@ -9,7 +9,7 @@ function cleanText(input: string): string {
   input = input.replace(/  +/g, ' ');
 
   // Remove everything after the first period, including the period
-  input = input.replace(/\s([A-Z].*)/, '');
+  //input = input.replace(/\s([A-Z].*)/, '');
 
   return input;
 }
@@ -41,7 +41,7 @@ export default async function getPostText(): Promise<string> {
       const longStatusMessage = cleanText(longStatus)
       const statusURL = currentStatus.Url?.[0]?.trim() || '';
       // Concatenate the extracted values into a single string with newline separator
-      const fulltext = `${appliesTo}\n\n${longStatusMessage}\n\n${statusURL}`;
+      const fulltext = `${appliesTo}\n\n${longStatusMessage}`;
     
       // Return the concatenated string
       if (fulltext.length > 300) {
