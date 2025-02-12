@@ -7,11 +7,13 @@ function cleanText(input: string): string {
 
   // Replace double spaces with a single space
   input = input.replace(/  +/g, ' ');
-  const regex = /^(.*?\.)/;
-  const match = input.match(regex);
 
-  return match;
+  // Remove everything after the first period, including the period
+  input = input.replace(/^(.*?\.)[^.]*$/, '$1');
+
+  return input;
 }
+
 
 export default async function getPostText(): Promise<string> {
   // Fetch the XML file
