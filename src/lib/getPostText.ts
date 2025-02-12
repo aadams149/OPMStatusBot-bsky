@@ -37,13 +37,14 @@ export default async function getPostText(): Promise<string> {
       const longStatusMessage = cleanText(longStatus)
       const statusURL = currentStatus.Url?.[0]?.trim() || '';
       // Concatenate the extracted values into a single string with newline separator
-      const result = `${appliesTo}\n\n${longStatusMessage}\n\n${statusURL}`;
+      const fulltext = `${appliesTo}\n\n${longStatusMessage}\n\n${statusURL}`;
 
       // Return the concatenated string
-      //if (result.length > 300) {
-      //  const shortSummary = currentStatus.StatusSummary.[0]?.trim() || '';
-       // const result = `${appliesTo}\n\n${shortSummary}\n\n${statusURL}`;
-     // }
+      if (result.length > 300) {
+        const shortSummary = currentStatus.StatusSummary.[0]?.trim() || '';
+        const result = `${appliesTo}\n\n${shortSummary}\n\n${statusURL}`;
+      }
+      else{const result = fulltext}
       return result;
     } else {
       console.error("CurrentStatus not found in XML.");
