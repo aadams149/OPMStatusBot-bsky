@@ -9,7 +9,7 @@ function cleanText(input: string): string {
   input = input.replace(/  +/g, ' ');
 
   // Remove everything after the first period, including the period
-  input = input.replace(/^(.*?\.)*$/, '');
+  input = input.replace(/\s([A-Z].*)/, '');
 
   return input;
 }
