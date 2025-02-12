@@ -7,6 +7,8 @@ function cleanText(input: string): string {
 
   // Replace double spaces with a single space
   input = input.replace(/  +/g, ' ');
+  const regex = /^(.*?\.)/;
+  const match = input.match(regex);
 
   return input;
 }
@@ -33,7 +35,7 @@ export default async function getPostText(): Promise<string> {
     if (currentStatus) {
       // Extract the first value from the AppliesTo and ShortStatusMessage arrays
       const appliesTo = currentStatus.AppliesTo?.[0]?.trim() || '';  // First element in AppliesTo array
-      const longStatus = currentStatus.LongStatusMessage?.[0]?.trim() || '';  // First element in longStatusMessage array
+      const longStatus = currentStatus.StatusSummary?.[0]?.trim() || '';  // First element in longStatusMessage array
       const longStatusMessage = cleanText(longStatus)
       const statusURL = currentStatus.Url?.[0]?.trim() || '';
       // Concatenate the extracted values into a single string with newline separator
@@ -41,7 +43,7 @@ export default async function getPostText(): Promise<string> {
     
       // Return the concatenated string
       if (fulltext.length > 300) {
-        const shortSummary = currentStatus.StatusSummary?.[0]?.trim() || '';
+        const shortSummary = currentStatus.ShortStatusMessage?.[0]?.trim() || '';
         const result = `${appliesTo}\n\n${shortSummary}\n\n${statusURL}`;
         return result;
       }
