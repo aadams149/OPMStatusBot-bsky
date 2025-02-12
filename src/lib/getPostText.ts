@@ -40,7 +40,7 @@ export default async function getPostText(): Promise<string> {
       const fulltext = `${appliesTo}\n\n${longStatusMessage}\n\n${statusURL}`;
 
       // Return the concatenated string
-      if (result.length > 300) {
+      if (fulltext.length > 300) {
         const shortSummary = currentStatus.StatusSummary?.[0]?.trim() || '';
         const result = `${appliesTo}\n\n${shortSummary}\n\n${statusURL}`;
       }
