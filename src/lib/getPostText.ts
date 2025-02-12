@@ -41,12 +41,12 @@ export default async function getPostText(): Promise<string> {
       const longStatusMessage = cleanText(longStatus)
       const statusURL = currentStatus.Url?.[0]?.trim() || '';
       // Concatenate the extracted values into a single string with newline separator
-      const fulltext = `${appliesTo}\n\n${longStatusMessage}`;
+      const fulltext = `${appliesTo}\n\n${longStatusMessage}\n\n${statusURL}`;
     
       // Return the concatenated string
       if (fulltext.length > 300) {
         const shortSummary = currentStatus.ShortStatusMessage?.[0]?.trim() || '';
-        const result = `${appliesTo}\n\n${shortSummary}\n\n${statusURL}`;
+        const result = `${appliesTo}\n\n${longStatusMessage}`;
         return result;
       }
       else{
