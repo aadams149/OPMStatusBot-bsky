@@ -10,7 +10,7 @@ function cleanText(input: string): string {
   const regex = /^(.*?\.)/;
   const match = input.match(regex);
 
-  return input;
+  return match;
 }
 
 export default async function getPostText(): Promise<string> {
