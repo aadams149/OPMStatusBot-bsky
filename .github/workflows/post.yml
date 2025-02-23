@@ -26,4 +26,5 @@ jobs:
             committer_name: Alex Adams
             committer_email: alex@alexanderjadams.com
             add: "current_status.txt"
+            cwd: "./tree/fix-cached-status/"
         name: Commit changes
