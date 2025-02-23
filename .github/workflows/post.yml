@@ -16,28 +16,19 @@ jobs:
           node-version-file: ".nvmrc"
       - run: npm ci
       - run: npm run build
+      - name: Configure git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
       - name: Send post
         run: npm start
         env:
           BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
           BSKY_PASSWORD: ${{ secrets.BSKY_PASSWORD }}
-  post:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build the project
-      run: npm run build
-
-    - name: Add and commit changes
-      uses: EndBug/add-and-commit@v9
-      with:
-        author_name: 'github-actions[bot]'
-        author_email: 'github-actions[bot]@users.noreply.github.com'
-        message: 'Automated commit message'
-        add: 'current_status.txt'
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "Automated commit from GitHub Actions"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
