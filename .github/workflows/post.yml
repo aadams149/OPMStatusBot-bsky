@@ -21,10 +21,23 @@ jobs:
         env:
           BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
           BSKY_PASSWORD: ${{ secrets.BSKY_PASSWORD }}
-      - uses: EndBug/add-and-commit@v9
-        with:
-            committer_name: Alex Adams
-            committer_email: alex@alexanderjadams.com
-            add: "current_status.txt"
-            cwd: "./tree/fix-cached-status/"
-        name: Commit changes
+  post:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the project
+      run: npm run build
+
+    - name: Add and commit changes
+      uses: EndBug/add-and-commit@v9.3.0
+      with:
+        author_name: 'github-actions[bot]'
+        author_email: 'github-actions[bot]@users.noreply.github.com'
+        message: 'Automated commit message'
+        add: 'current_status.txt'
