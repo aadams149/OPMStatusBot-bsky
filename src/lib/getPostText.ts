@@ -1,5 +1,6 @@
 import { parseStringPromise } from 'xml2js';
 import * as fs from 'fs';
+import { error } from 'console';
 const filePath: string = 'current_status.txt';
 
 function readFile(filePath: string): string | null {
@@ -73,13 +74,13 @@ export default async function getPostText(): Promise<string> {
       return result;}
     } else {
         console.error("Current status is identical to cached status");
-        return '';
+        throw error;
       };
       // Return the concatenated string
       
     } else {
       console.error("CurrentStatus not found in XML.");
-      return '';  // Return an empty string if CurrentStatus is not found
+      throw error;  // Return an empty string if CurrentStatus is not found
     }
   } catch (error) {
     console.error("Error parsing XML:", error);
