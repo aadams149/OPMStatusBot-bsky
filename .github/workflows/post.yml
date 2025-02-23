@@ -29,6 +29,6 @@ jobs:
         run: |
           git add .
           git commit -m "Automated commit from GitHub Actions"
-          git push origin fix-cached-status
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
