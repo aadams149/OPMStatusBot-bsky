@@ -1,7 +1,15 @@
-January 23, 2026
+January 26, 2026
 
-Federal agencies in the Washington, DC area are Open.
+Federal Offices in the Washington, DC area are Closed. Maximum Telework is in effect.
 
-Employees are expected to begin the workday on time. Normal operating procedures are in effect.
+Telework Employees are expected to work. Generally, telework employees may not receive weather and safety leave.
+
+Remote Workers are expected to work. Generally, remote workers may not receive weather and safety leave.
+
+Non-Telework Employees generally will be granted weather and safety leave for the number of hours they were scheduled to work. However, weather and safety leave will not be granted to employees who are on official travel outside of the duty station or on an Alternative Work Schedule (AWS) day off or other non-workday.
+
+Emergency Employees are expected to report to their worksite unless otherwise directed by their agencies.
+
+Employees on Preapproved Leave (paid or unpaid) or other paid time off generally should continue to be charged leave or other paid time off and should not receive weather and safety leave. If you have the OPM DC Status app installed on your mobile device, please note that the app will not send a push notification when OPM changes the Washington, DC area operating status. Please check the app periodically for updates to the operating status, or visit OPM's Current Status page for the latest information: https://www.opm.gov/status. The OPM DC Status app cannot be downloaded from app stores for new users.
 
 https://www.opm.gov/policy-data-oversight/snow-dismissal-procedures/current-status/
