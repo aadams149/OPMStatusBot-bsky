@@ -1,7 +1,7 @@
-February 24, 2026
+February 25, 2026
 
 Federal agencies in the Washington, DC area are Open.
 
-Employees are expected to begin the workday on time. Normal operating procedures are in effect.
+Employees are expected to begin the workday on time. Normal operating procedures are in effect. If you have the OPM DC Status app installed on your mobile device, please note that the app will not send a push notification when OPM changes the Washington, DC area operating status. Please check the app periodically for updates to the operating status, or visit OPM's Current Status page for the latest information: https://www.opm.gov/status. The OPM DC Status app cannot be downloaded from app stores for new users.
 
-https://www.opm.gov/policy-data-oversight/snow-dismissal-procedures/status-archives/26/2/23/Open_3197/
+https://www.opm.gov/policy-data-oversight/snow-dismissal-procedures/current-status/
