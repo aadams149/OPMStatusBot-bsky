@@ -1,7 +1,13 @@
-March 15, 2026
+March 16, 2026
 
-Federal agencies in the Washington, DC area are Open.
+Federal agencies in the Washington, DC area are Open and employees have the Option for Unscheduled Leave or Unscheduled Telework.
 
-Employees are expected to begin the workday on time. Normal operating procedures are in effect. If you have the OPM DC Status app installed on your mobile device, please note that the app will not send a push notification when OPM changes the Washington, DC area operating status. Please check the app periodically for updates to the operating status, or visit OPM's Current Status page for the latest information: https://www.opm.gov/status. The OPM DC Status app cannot be downloaded from app stores for new users.
+Telework Employees Not Scheduled to Telework must report to the office on time or notify their supervisor of their intent to use unscheduled leave or unscheduled telework. Employees who request unscheduled telework must be prepared to telework, take unscheduled leave or other paid time off, or a combination-thereby accounting for the entire workday.
+
+Remote Workers and Telework Employees Scheduled to Telework are expected to begin their workday on time unless requesting unscheduled leave.
+
+Non-Telework Employees must report to the office on time or notify their supervisor of their intent to use unscheduled leave.
+
+Emergency Employees are expected to report to their worksites on time unless otherwise directed by their agencies.
 
 https://www.opm.gov/policy-data-oversight/snow-dismissal-procedures/current-status/
